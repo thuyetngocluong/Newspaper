@@ -28,7 +28,7 @@
 		635518C02695A211000A0D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 635518BE2695A1EB000A0D1B /* LaunchScreen.storyboard */; };
 		635518C22695A2C9000A0D1B /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6354626B26959A210084385C /* CategoryCell.xib */; };
 		635518C32695A2CD000A0D1B /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6354626A26959A1B0084385C /* NewsCell.xib */; };
-		63555D5C269D5497005190CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63555D5A269D5497005190CB /* Main.storyboard */; };
+		63555D5F269D6CC6005190CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63555D5D269D6CC6005190CB /* Main.storyboard */; };
 		6360A500269C2148004BE23B /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360A4FF269C2148004BE23B /* BookmarkViewController.swift */; };
 		6360A502269C2659004BE23B /* VNExpressCoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360A501269C2659004BE23B /* VNExpressCoreDataService.swift */; };
 		A41520D4535A52B6589B298A /* Pods_LNT_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4EDE12D2190A37D5500468C /* Pods_LNT_News.framework */; };
@@ -57,7 +57,7 @@
 		6354627026959A360084385C /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		6354627126959A360084385C /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		635518BE2695A1EB000A0D1B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		63555D5B269D5497005190CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Desktop/LNT News/LNT News/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		63555D5E269D6CC6005190CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "LNT News/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
 		6360A4FF269C2148004BE23B /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		6360A501269C2659004BE23B /* VNExpressCoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNExpressCoreDataService.swift; sourceTree = "<group>"; };
 		63FD120C26959A99003FCFDD /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		63546261269599E10084385C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				63555D5A269D5497005190CB /* Main.storyboard */,
+				63555D5D269D6CC6005190CB /* Main.storyboard */,
 				6350278A2696A854002BBBD9 /* CategoryCollectionViewCell */,
 				6354626826959A130084385C /* CategoryCell */,
 				6354626726959A0C0084385C /* NewsCell */,
@@ -287,7 +287,7 @@
 				635518C02695A211000A0D1B /* LaunchScreen.storyboard in Resources */,
 				6354623B2695991D0084385C /* Assets.xcassets in Resources */,
 				6350278E2696A874002BBBD9 /* CategoryCollectionViewCell.xib in Resources */,
-				63555D5C269D5497005190CB /* Main.storyboard in Resources */,
+				63555D5F269D6CC6005190CB /* Main.storyboard in Resources */,
 				635518C32695A2CD000A0D1B /* NewsCell.xib in Resources */,
 				635518C22695A2C9000A0D1B /* CategoryCell.xib in Resources */,
 			);
@@ -366,10 +366,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		63555D5A269D5497005190CB /* Main.storyboard */ = {
+		63555D5D269D6CC6005190CB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				63555D5B269D5497005190CB /* Base */,
+				63555D5E269D6CC6005190CB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

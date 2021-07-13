@@ -37,9 +37,10 @@ class BookmarkViewController: UIViewController {
     
     @IBAction func clickedBackButton(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
-        if let tableView = contentTableView {
-            tableView.reloadData()
-        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        contentTableView?.reloadData()
     }
 }
 

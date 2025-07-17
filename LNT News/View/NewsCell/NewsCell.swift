@@ -80,10 +80,10 @@ class NewsCell: UITableViewCell {
         titleLB.text = newsItem.title
         previewLB.text = newsItem.itemDescription.toPreview
         moreInfoLB.text = "\(newsItem.pubDate.toDateAgo) giờ trước"
-        ImageService.shared.getUIImage(url: newsItem.itemDescription.toLinkImage) {
-            [weak self] _, uiImage in
+        ImageService.shared.getUIImage(url: newsItem.itemDescription.toLinkImage) { [weak self] _, url, uiImage in
+            guard let self = self, self.item.itemDescription.toLinkImage == url else { return }
             DispatchQueue.main.async {
-                self?.imgView.image = uiImage
+                self.imgView.image = uiImage
             }
         }
     }
@@ -97,10 +97,10 @@ class NewsCell: UITableViewCell {
         titleLB.text = newsItem.title
         previewLB.text = newsItem.itemDescription.toPreview
         moreInfoLB.text = "\(newsItem.pubDate.toDateAgo) giờ trước"
-        ImageService.shared.getUIImage(url: newsItem.itemDescription.toLinkImage) {
-            [weak self] _, uiImage in
+        ImageService.shared.getUIImage(url: newsItem.itemDescription.toLinkImage) { [weak self] _, url, uiImage in
+            guard let self = self, self.item.itemDescription.toLinkImage == url else { return }
             DispatchQueue.main.async {
-                self?.imgView.image = uiImage
+                self.imgView.image = uiImage
             }
         }
     }

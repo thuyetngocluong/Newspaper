@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-typealias CompleteDownloadImage = (Bool, UIImage?) -> Void
+typealias CompleteDownloadImage = (Bool, String, UIImage?) -> Void
 
 class ImageService {
     private init() {}
@@ -21,9 +21,9 @@ class ImageService {
                 response in
                 if let data = response.data {
                     let uiImage = UIImage(data: data)
-                    completeDownload(true, uiImage)
+                    completeDownload(true, url, uiImage)
                 } else {
-                    completeDownload(false, nil)
+                    completeDownload(false, url, nil)
                 }
         }
     }
